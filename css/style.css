@@ -1,0 +1,581 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+header {
+    background-color: midnightblue;
+}
+
+main {
+    background-color:teal ;
+}
+
+footer {
+    background-color: rgb(122, 83, 122);
+}
+
+a {
+    text-decoration: none;
+}
+
+.textoNavHead {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+    color: white;
+    padding: 5px;
+}
+
+.logo {
+    width: 5rem;
+    
+}
+.tituloEndoTavo {
+    font-family: 'Ubuntu', sans-serif;    
+    font-size: 3rem; 
+    font-style: italic;
+    padding-right: 1rem;
+}
+
+.linksPieDePagina {
+    font-family: 'Ubuntu', sans-serif;
+    color: white;    
+}
+
+.ulPieDePagina {
+    list-style: none;
+}
+
+.iconosPieDePagina {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    padding-top: 2rem;    
+}
+
+.div__pieDePagina {
+    align-items: center;
+}
+
+.fondoNav {
+    background-color: rgba(0, 0, 0, 0.493);    
+}
+
+.botonWhatsapp {
+    background-color: rgb(29, 146, 29);
+    color: white;
+    
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    text-align: center;
+    border-width: 0.1rem;
+    border-style: solid;
+    border-radius: 2rem;
+}
+
+.sectionLogo {
+   display: flex;
+   justify-content: space-between;    
+}
+
+.fondoNav {
+    display: flex;
+}
+
+.formulario {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.servicios {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr;
+}
+
+.serviciosInline {
+    
+    padding: 1rem;
+}
+
+.presentacion {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 1rem;
+}
+
+main {
+    min-height: 70vh;
+    padding: 1rem;
+}
+
+.paginaDeInicio {
+    display: grid;
+    grid-template-areas: 
+        "foto parrafo"
+        "foto link";
+}
+
+.cuandoConsultar {
+    font-size: 1.2rem;
+}
+
+.turnos {
+    font-size: 1.2rem;
+    background-color: yellow;
+}
+
+.foto {
+    grid-area: foto;
+    
+    border-style: solid;
+    border-color: white;
+    border-width: 5px; 
+    border-radius: 16px;
+    align-self: center;  
+}
+
+.cuandoConsultar {
+    grid-area: parrafo;
+    padding: 1.2rem;
+    align-self: center;
+    text-align: justify;    
+    border-style: solid;
+    border-color: white;
+    border-width: 5px; 
+    border-radius: 16px;   
+    margin-left: 1rem;
+    background-color: rgb(16, 196, 196);
+}
+
+.turnos {
+    grid-area: link;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    align-self: center;   
+    border-style: solid;
+    border-color: black;
+    border-width: 3px; 
+    border-radius: 3px;
+}
+
+.presentacionSection {
+    display: flex;
+    justify-content: space-around;
+}
+
+.foto-quien-soy {
+    border-style: solid;
+    border-color: white;
+    border-width: 5px; 
+    border-radius: 16px;
+    align-self: center;  
+    margin-top: 1rem;
+}
+
+.presentacion {
+    padding: 1.2rem;
+    align-self: center;
+    text-align: justify;    
+    border-style: solid;
+    border-color: white;
+    border-width: 5px; 
+    border-radius: 16px;
+    font-size: 1.2rem;
+    background-color: rgb(16, 196, 196);
+    display: inline-block;
+    width: 600px;
+}
+
+
+
+.serviciosInlineDiv {
+    padding: 1.2rem;
+    align-self: stretch;
+    text-align: justify;    
+    border-style: solid;
+    border-color: white;
+    border-width: 5px; 
+    border-radius: 16px;
+    font-size: 1.2rem;
+    margin: 1rem;
+    background-color: rgb(16, 196, 196);
+}
+
+.acordeon {
+    display: none;
+    position: absolute;
+    padding: 3rem;
+}
+
+form {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.mapa  {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    width: 50%;
+}
+
+.datosContacto {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    font-size: 1.2rem;
+}
+
+.form {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    width: 400px;
+}
+
+.nombre {
+    padding: 5px;
+    border-radius: 5px;
+    border-color: white;
+}
+
+.email {
+    padding: 5px;
+    border-radius: 5px;
+    border-color: white;
+}
+
+.motivoDeConsulta {
+    padding: 5px;
+    border-radius: 5px;
+    border-color: white;
+}
+
+.consulta {
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    border-color: white;
+}
+
+.textarea {
+    border-radius: 5px;
+    border-color: white;
+}
+
+.enviar {
+    width: 50px;
+    padding: 5px;
+    background-color:rgb(6, 41, 41) ;
+    color: white;
+    border: none;
+}
+
+.h3__datosContacto {
+    font-size: 1.5rem;
+}
+
+.galeria {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-evenly;    
+}
+
+@media (max-width: 992px) {
+    .paginaDeInicio {
+        grid-template-areas: 
+        "link"
+        "foto" 
+        "parrafo";
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    .turnos {
+        font-size: 1rem;
+        justify-self: center;
+    }
+
+    .cuandoConsultar {
+        font-size: 1rem;
+        justify-self: center;
+    }
+    
+    .logo {
+        width: 2rem;
+    }
+  
+    .textoNavHead {
+        font-size: 1.1rem;
+    }
+
+    .tituloEndoTavo2 {
+        font-size: 2rem;
+        text-align: right;
+    }
+
+    .foto {
+        height: 50vh;
+        justify-self: center;
+        
+    }
+
+    .turnos {
+        justify-self: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .paginaDeInicio {
+        grid-template-areas: 
+        "link"
+        "foto"
+        "parrafo";
+        justify-content: center;
+    }
+    
+    .turnos {
+        font-size: 1rem;
+        justify-self: center;
+    }
+
+    .cuandoConsultar {
+        font-size: 1rem;
+        justify-self: center;
+    }
+    
+    .logo {
+        width: 2rem;
+    }
+
+    .fondoNav {
+        flex-direction: column;
+    }
+
+    .textoNavHead {
+        font-size: 1rem;
+    }
+
+    .tituloEndoTavo2 {
+        font-size: 1rem;
+        text-align: right;
+    }
+
+    .foto {
+        height: 100%;
+        justify-self: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    .presentacionSection {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .presentacion {
+        font-size: 1.1rem;
+        justify-self: center
+        ;
+    }
+
+    .foto-quien-soy {
+        justify-self: center;
+        width: 300px;
+    }
+
+}
+
+@media (max-width: 576px) {
+    h2 {
+        font-size: 1.1rem;
+    }
+
+    .presentacionSection {
+        flex-direction: column;
+    }
+
+    .presentacion {
+        font-size: 1rem;
+        justify-self: center;
+        width: 100%;
+    }
+
+    .foto-quien-soy {
+        justify-self: center;
+        width: 200px;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .servicios {
+        display: block;
+    }
+
+    .serviciosInline {
+        font-size: 1.1rem;
+    }
+
+    .serviciosInlineDiv {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .servicios {
+        display: none;
+    }
+
+    .serviciosInline {
+        font-size: 1rem;
+    }
+
+    .serviciosInlineDiv {
+        font-size: 0.9rem;
+    }
+
+    .acordeon {
+        display: inline-block;        
+        width: 100%;        
+    }
+
+    .accordion-body {
+        background-color: rgb(16, 196, 196);
+    }
+    
+}
+
+@media (max-width: 992px) {
+    .galeria {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .galeria {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .formulario {
+        grid-template-areas: 
+        "datos formulario"
+        "mapa mapa";
+    }
+
+    .form {
+        grid-area: formulario;
+    }
+
+    .datosContacto {
+        grid-area: datos;
+    }
+
+    .mapa {
+        grid-area: mapa;
+    }
+
+    .h3__datosContacto {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .formulario {
+        grid-template-areas: 
+        "datos"
+        "formulario"
+        "mapa";
+        
+    }
+
+    .form {
+        grid-area: formulario;
+        width: 100%;
+    }
+
+    .datosContacto {
+        grid-area: datos;
+        justify-self: center;
+    }
+
+    .mapa {
+        grid-area: mapa;
+        width: 100%;
+        align-self: center;
+    }
+
+    .iframeMapa {
+        width: 100%;
+        height: 200px;
+        align-self: center;
+    }
+       
+}
+
+.textoNavHead:hover {
+    color: rgba(105, 97, 97, 0.993);
+}
+
+.linksPieDePagina:hover {
+    text-decoration: underline;
+}
+
+.cuandoConsultar::first-letter {
+    font-size: 2rem;
+}
+
+.presentacion::first-letter {
+    font-size: 2rem;
+}
+
+.serviciosInline2::first-letter {
+    font-size: 2rem;
+}
+
+.iframeMapa {
+    width: 100%;
+}
+
+.div__datosContacto {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   border-style: solid;
+   border-color: white;
+   border-radius: 1rem;
+   background-color: rgb(16, 196, 196);
+   padding: 1rem;
+}
+
+
+
+.serviciosInlineDiv:hover {
+    zoom: 1.1;
+    background-color: rgb(19, 219, 219) ;
+}
