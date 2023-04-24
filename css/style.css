@@ -336,7 +336,71 @@ form {
     .turnos {
         justify-self: center;
     }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    .presentacionSection {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .presentacion {
+        font-size: 1.1rem;
+        justify-self: center
+        ;
+    }
+
+    .foto-quien-soy {
+        justify-self: center;
+        width: 300px;
+    }
+
+    .servicios {
+        display: block;
+    }
+
+    .serviciosInline {
+        font-size: 1.1rem;
+    }
+
+    .serviciosInlineDiv {
+        font-size: 1rem;
+    }
+
+    .galeria {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .formulario {
+        grid-template-areas: 
+        "datos formulario"
+        "mapa mapa";
+    }
+
+    .form {
+        grid-area: formulario;
+    }
+
+    .datosContacto {
+        grid-area: datos;
+    }
+
+    .mapa {
+        grid-area: mapa;
+    }
+
+    .h3__datosContacto {
+        font-size: 1rem;
+    }
 }
+
+
+
 
 @media (max-width: 576px) {
     .paginaDeInicio {
@@ -379,34 +443,7 @@ form {
         justify-self: center;
         width: 100%;
     }
-}
 
-@media (max-width: 992px) {
-    h2 {
-        font-size: 1.3rem;
-    }
-
-    .presentacionSection {
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        gap: 1rem;
-    }
-    
-    .presentacion {
-        font-size: 1.1rem;
-        justify-self: center
-        ;
-    }
-
-    .foto-quien-soy {
-        justify-self: center;
-        width: 300px;
-    }
-
-}
-
-@media (max-width: 576px) {
     h2 {
         font-size: 1.1rem;
     }
@@ -426,23 +463,6 @@ form {
         width: 200px;
     }
 
-}
-
-@media (max-width: 992px) {
-    .servicios {
-        display: block;
-    }
-
-    .serviciosInline {
-        font-size: 1.1rem;
-    }
-
-    .serviciosInlineDiv {
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 576px) {
     .servicios {
         display: none;
     }
@@ -458,54 +478,19 @@ form {
     .acordeon {
         display: inline-block;        
         width: 100%;        
+        position: relative;
     }
 
     .accordion-body {
         background-color: rgb(16, 196, 196);
     }
-    
-}
 
-@media (max-width: 992px) {
-    .galeria {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media (max-width: 576px) {
     .galeria {
         display: grid;
         grid-template-columns: 1fr;
         gap: 1rem;
     }
-}
 
-@media (max-width: 992px) {
-    .formulario {
-        grid-template-areas: 
-        "datos formulario"
-        "mapa mapa";
-    }
-
-    .form {
-        grid-area: formulario;
-    }
-
-    .datosContacto {
-        grid-area: datos;
-    }
-
-    .mapa {
-        grid-area: mapa;
-    }
-
-    .h3__datosContacto {
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 576px) {
     .formulario {
         grid-template-areas: 
         "datos"
@@ -535,8 +520,9 @@ form {
         height: 200px;
         align-self: center;
     }
-       
+    
 }
+
 
 .textoNavHead:hover {
     color: rgba(105, 97, 97, 0.993);
