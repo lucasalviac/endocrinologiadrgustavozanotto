@@ -34,6 +34,15 @@ a {
     padding: 5px;
 }
 
+.navbarScroll {
+    position: sticky;
+    top: 0;
+    padding: 0;
+    width: 100%;
+    z-index: 2;
+    
+}
+
 .logo {
     width: 5rem;
     
@@ -223,6 +232,10 @@ main {
     padding: 3rem;
 }
 
+.acordeon_negrita {
+    font-weight: bold;
+}
+
 form {
     display: grid;
     gap: 0.5rem;
@@ -292,6 +305,18 @@ form {
     display: flex;
     padding: 1rem;
     justify-content: space-evenly;    
+}
+
+.ul__submenu {
+    position: absolute;
+    background-color: rgb(46, 46, 46);
+    padding: 0.5rem;
+    list-style-type: none;
+    display: none;
+}
+
+.li__submenu:hover .ul__submenu {
+    display: block;
 }
 
 @media (max-width: 992px) {
