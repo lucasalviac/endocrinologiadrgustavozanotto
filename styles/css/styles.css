@@ -228,6 +228,7 @@ main {
     main .formulario .botonWhatsapp {
       background-color: #1d921d;
       color: white;
+      z-index: 2;
       position: fixed;
       right: 50px;
       bottom: 50px;
