@@ -1,0 +1,112 @@
+@media (max-width: 576px) {
+
+    .logo {
+        width: 2rem;
+    }
+
+    .tituloEndoTavo2 {
+        font-size: 1rem;
+        text-align: right;
+    }
+
+    .paginaDeInicio {
+        grid-template-areas: 
+        "link"
+        "foto"
+        "parrafo";
+        justify-content: center;
+
+        .turnos {
+            font-size: 1rem;
+            justify-self: center;
+        }
+    
+        .cuandoConsultar {
+            font-size: 1rem;
+            justify-self: center;
+        }
+                  
+         
+                
+        .foto {
+            height: 100%;
+            justify-self: center;
+            width: 100%;
+        }
+    }
+
+    h2 {
+        font-size: 1.1rem;
+    }
+
+    .presentacionSection {
+        flex-direction: column;
+
+        .presentacion {
+            font-size: 1rem;
+            justify-self: center;
+            width: 100%;
+        }
+    
+        .foto-quien-soy {
+            justify-self: center;
+            width: 200px;
+        }
+    }
+
+    .servicios {
+        display: none;
+
+        .acordeon {
+            display: inline-block;        
+            width: 100%;        
+            position: relative;
+
+            div {
+                div {
+                    .accordion-body {
+                        background-color: rgb(16, 196, 196);
+                    }
+                }
+            }
+        }
+    }
+
+    .galeria {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .formulario {
+        grid-template-areas: 
+        "datos"
+        "formulario"
+        "mapa";
+
+        .form {
+            grid-area: formulario;
+            width: 100%;
+        }
+    
+        .div__datosContacto {
+            grid-area: datos;
+            justify-self: center;
+        }
+    
+        .mapa {
+            grid-area: mapa;
+            width: 100%;
+            align-self: center;
+
+            .iframeMapa {
+                width: 100%;
+                height: 200px;
+                align-self: center;
+            }
+        }
+        
+    }
+
+    
+}

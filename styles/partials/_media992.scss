@@ -1,0 +1,100 @@
+@media (max-width: 992px) {
+
+    .logo {
+        width: 2rem;
+    }
+  
+    .tituloEndoTavo2 {
+        font-size: 2rem;
+        text-align: right;
+    }
+
+    .paginaDeInicio {
+        grid-template-areas: 
+        "link"
+        "foto" 
+        "parrafo";
+        justify-content: center;
+        gap: 1rem;
+
+        .turnos {
+            font-size: 1rem;
+            justify-self: center;
+        }
+    
+        .cuandoConsultar {
+            font-size: 1rem;
+            justify-self: center;
+        }      
+               
+    
+        .foto {
+            height: 50vh;
+            justify-self: center;
+            
+        }
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    .presentacionSection {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 1rem;
+
+        .presentacion {
+            font-size: 1.1rem;
+            justify-self: center
+            ;
+        }
+    
+        .foto-quien-soy {
+            justify-self: center;
+            width: 300px;
+        }
+    }
+
+    .servicios {
+        display: block;
+
+        .serviciosInlineDiv {
+            font-size: 1rem;
+
+            .serviciosInline {
+                font-size: 1.1rem;
+            }
+        }
+    }
+
+    .galeria {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .formulario {
+        grid-template-areas: 
+        "datos formulario"
+        "mapa mapa";
+
+        .form {
+            grid-area: formulario;
+        }
+    
+        .div__datosContacto {
+            grid-area: datos;
+
+            .h3__datosContacto {
+                font-size: 1rem;
+            }
+        }
+    
+        .mapa {
+            grid-area: mapa;
+        }
+    }
+
+    
+}

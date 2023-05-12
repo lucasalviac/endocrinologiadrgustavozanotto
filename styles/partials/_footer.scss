@@ -1,0 +1,48 @@
+footer {
+    background-color: rgb(122, 83, 122);
+
+    div {
+        div {
+            .ulPieDePagina {
+                list-style: none;
+
+                .linksPieDePagina {
+                    font-family: 'Ubuntu', sans-serif;
+                    color: white;
+                    &:hover {
+                        text-decoration: underline;
+                    }    
+
+                    
+                }
+                
+            }
+
+            .div__pieDePagina {
+                align-items: center;
+
+                .iconosPieDePagina {
+                    font-size: 1.5rem;
+                    text-decoration: none;                    
+                    padding-top: 2rem;    
+                    
+                }
+            }
+        }
+    }
+}
+
+
+$iconos: (
+    whatsapp: rgb(9, 182, 9),
+    facebook: rgb(0, 0, 255),
+    instagram: rgb(255, 60, 0),
+    tiktok: rgb(255, 255, 255),
+);
+
+@each $icono, $color in $iconos {
+    
+    .bi-#{$icono} {
+        color: $color;
+    }
+}

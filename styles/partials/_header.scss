@@ -1,0 +1,84 @@
+header {
+  background-image: linear-gradient(to right, rgb(190, 190, 190), midnightblue);
+
+  .tituloEndoTavo {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3rem;
+    font-style: italic;
+    padding-right: 1rem;
+
+    .tituloEndoTavo2 {
+      -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+      animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+      animation-delay: 0.4s
+    }
+
+    .logo {
+      border-style: solid;
+      border-radius: 2.5rem;
+      border-color: white;
+      border: 0.1rem;
+      -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+      animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+      animation-delay: 0.2s;
+
+    }
+
+    @-webkit-keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+
+
+  .sectionLogo {
+    display: flex;
+    justify-content: space-between;
+
+    .logo {
+      width: 5rem;
+
+    }
+  }
+
+  .fondoNav {
+    display: flex;
+  }
+
+}
+
+.navbarScroll {
+  position: sticky;
+  top: 0;
+  padding: 0;
+  width: 100%;
+  z-index: 2;
+
+}
+
+.ul__submenu {
+  position: absolute;
+  background-color: rgb(46, 46, 46);
+  padding: 0.5rem;
+  list-style-type: none;
+  display: none;
+}
+
+.li__submenu:hover .ul__submenu {
+  display: block;
+}
