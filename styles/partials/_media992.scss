@@ -9,6 +9,8 @@
         text-align: right;
     }
 
+    main {
+
     .paginaDeInicio {
         grid-template-areas: 
         "link"
@@ -69,10 +71,13 @@
         }
     }
 
+    div {
+
     .galeria {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+}
 
     .formulario {
         grid-template-areas: 
@@ -95,6 +100,6 @@
             grid-area: mapa;
         }
     }
-
+}
     
 }
