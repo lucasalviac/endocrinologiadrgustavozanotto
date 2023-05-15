@@ -365,6 +365,8 @@ footer {
   .tituloEndoTavo2 {
     font-size: 2rem;
     text-align: right; }
+  .li__submenu:hover .ul__submenu {
+    display: none; }
   main .paginaDeInicio {
     grid-template-areas: "link" "foto"  "parrafo";
     justify-content: center;

@@ -9,6 +9,10 @@
         text-align: right;
     }
 
+    .li__submenu:hover .ul__submenu {
+        display: none;
+      }
+
     main {
 
     .paginaDeInicio {
