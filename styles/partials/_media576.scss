@@ -78,30 +78,32 @@
 
         div {
             .galeria {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 1rem;
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 1rem;
+
+                .video {
+                    width: 100%;
+                }
+            }
         }
-    }
 
         .formulario {
-            grid-template-areas:
-                "datos"
-                "formulario"
-                "mapa";
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
 
             .form {
                 grid-area: formulario;
                 width: 100%;
             }
 
-            .div__datosContacto {
-                grid-area: datos;
-                justify-self: center;
-            }
+            
 
-            .mapa {
-                grid-area: mapa;
+            .mapa {                
                 width: 100%;
                 align-self: center;
 

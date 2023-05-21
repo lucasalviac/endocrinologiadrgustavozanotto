@@ -1,473 +1,695 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Ubuntu', sans-serif; }
+  font-family: 'Ubuntu', sans-serif;
+}
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 header {
-  background-image: linear-gradient(to right, #bebebe, midnightblue); }
-  header .tituloEndoTavo {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 3rem;
-    font-style: italic;
-    padding-right: 1rem; }
-    header .tituloEndoTavo .tituloEndoTavo2 {
-      -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-      animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-      animation-delay: 0.4s; }
-    header .tituloEndoTavo .logo {
-      border-style: solid;
-      border-radius: 2.5rem;
-      border-color: white;
-      border: 0.1rem;
-      -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-      animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-      animation-delay: 0.2s; }
+  background-image: linear-gradient(to right, #bebebe, midnightblue);
+}
+
+header .tituloEndoTavo {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 3rem;
+  font-style: italic;
+  padding-right: 1rem;
+}
+
+header .tituloEndoTavo .tituloEndoTavo2 {
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation-delay: 0.4s;
+}
+
+header .tituloEndoTavo .logo {
+  border-style: solid;
+  border-radius: 2.5rem;
+  border-color: white;
+  border: 0.1rem;
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation-delay: 0.2s;
+}
 
 @-webkit-keyframes fade-in {
   0% {
-    opacity: 0; }
+    opacity: 0;
+  }
+
   100% {
-    opacity: 1; } }
+    opacity: 1;
+  }
+}
 
 @keyframes fade-in {
   0% {
-    opacity: 0; }
+    opacity: 0;
+  }
+
   100% {
-    opacity: 1; } }
-  header .sectionLogo {
-    display: flex;
-    justify-content: space-between; }
-    header .sectionLogo .logo {
-      width: 5rem; }
-  header .fondoNav {
-    display: flex; }
+    opacity: 1;
+  }
+}
+
+header .sectionLogo {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .sectionLogo .logo {
+  width: 5rem;
+}
+
+header .fondoNav {
+  display: flex;
+}
 
 .navbarScroll {
   position: sticky;
   top: 0;
   padding: 0;
   width: 100%;
-  z-index: 2; }
+  z-index: 2;
+}
 
 .ul__submenu {
   position: absolute;
   background-color: #2e2e2e;
   padding: 0.5rem;
   list-style-type: none;
-  display: none; }
+  display: none;
+}
 
 .li__submenu:hover .ul__submenu {
-  display: block; }
+  display: block;
+}
 
 main {
   background-color: teal;
   min-height: 70vh;
-  padding: 1rem; }
-  main .paginaDeInicio {
-    display: grid;
-    grid-template-areas: "foto parrafo" "foto link"; }
-    main .paginaDeInicio .cuandoConsultar {
-      font-size: 1.2rem;
-      grid-area: parrafo;
-      padding: 1.2rem;
-      align-self: center;
-      text-align: justify;
-      border-style: solid;
-      border-color: white;
-      border-width: 5px;
-      border-radius: 1rem;
-      margin-left: 1rem;
-      background-color: #10c4c4;
-      -webkit-animation: flip-in-hor-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-      animation: flip-in-hor-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-      animation-delay: 0.8s; }
+  padding: 1rem;
+}
+
+main .paginaDeInicio {
+  display: grid;
+  grid-template-areas: "foto parrafo"
+    "foto link";
+}
+
+main .paginaDeInicio .cuandoConsultar {
+  font-size: 1.2rem;
+  grid-area: parrafo;
+  padding: 1.2rem;
+  align-self: center;
+  text-align: justify;
+  border-style: solid;
+  border-color: white;
+  border-width: 5px;
+  border-radius: 1rem;
+  margin-left: 1rem;
+  background-color: #10c4c4;
+  -webkit-animation: flip-in-hor-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: flip-in-hor-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 0.8s;
+}
 
 @-webkit-keyframes flip-in-hor-bottom {
   0% {
     -webkit-transform: rotateX(80deg);
     transform: rotateX(80deg);
-    opacity: 0; }
+    opacity: 0;
+  }
+
   100% {
     -webkit-transform: rotateX(0);
     transform: rotateX(0);
-    opacity: 1; } }
+    opacity: 1;
+  }
+}
 
 @keyframes flip-in-hor-bottom {
   0% {
     -webkit-transform: rotateX(80deg);
     transform: rotateX(80deg);
-    opacity: 0; }
+    opacity: 0;
+  }
+
   100% {
     -webkit-transform: rotateX(0);
     transform: rotateX(0);
-    opacity: 1; } }
-      main .paginaDeInicio .cuandoConsultar::first-letter {
-        font-size: 2rem; }
-    main .paginaDeInicio .turnos {
-      font-size: 1.2rem;
-      background-color: yellow;
-      grid-area: link;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      justify-self: center;
-      align-self: center;
-      border-style: solid;
-      border-color: black;
-      border-width: 3px;
-      border-radius: 3px;
-      -webkit-animation: slit-in-vertical 0.45s ease-out both;
-      animation: slit-in-vertical 0.45s ease-out both;
-      animation-delay: 1s; }
-    main .paginaDeInicio .foto {
-      grid-area: foto;
-      border-style: solid;
-      border-color: white;
-      border-width: 5px;
-      border-radius: 1rem;
-      align-self: center;
-      -webkit-animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-      animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-      animation-delay: 0.6s; }
+    opacity: 1;
+  }
+}
+
+main .paginaDeInicio .cuandoConsultar::first-letter {
+  font-size: 2rem;
+}
+
+main .paginaDeInicio .turnos {
+  font-size: 1.2rem;
+  background-color: yellow;
+  grid-area: link;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  align-self: center;
+  border-style: solid;
+  border-color: black;
+  border-width: 3px;
+  border-radius: 3px;
+  -webkit-animation: slit-in-vertical 0.45s ease-out both;
+  animation: slit-in-vertical 0.45s ease-out both;
+  animation-delay: 1s;
+}
+
+main .paginaDeInicio .foto {
+  grid-area: foto;
+  border-style: solid;
+  border-color: white;
+  border-width: 5px;
+  border-radius: 1rem;
+  align-self: center;
+  -webkit-animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 0.6s;
+}
 
 @-webkit-keyframes slide-in-left {
   0% {
     -webkit-transform: translateX(-1000px);
     transform: translateX(-1000px);
-    opacity: 0; }
+    opacity: 0;
+  }
+
   100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
-    opacity: 1; } }
+    opacity: 1;
+  }
+}
 
 @keyframes slide-in-left {
   0% {
     -webkit-transform: translateX(-1000px);
     transform: translateX(-1000px);
-    opacity: 0; }
+    opacity: 0;
+  }
+
   100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
-    opacity: 1; } }
-  main .presentacionSection {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around; }
-    main .presentacionSection .foto-quien-soy {
-      border-style: solid;
-      border-color: white;
-      border-width: 5px;
-      border-radius: 1rem;
-      align-self: center;
-      margin-top: 1rem;
-      -webkit-animation: slit-in-vertical 0.45s ease-out both;
-      animation: slit-in-vertical 0.45s ease-out both;
-      animation-delay: 0.6s; }
+    opacity: 1;
+  }
+}
+
+main .presentacionSection {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+
+main .presentacionSection .foto-quien-soy {
+  border-style: solid;
+  border-color: white;
+  border-width: 5px;
+  border-radius: 1rem;
+  align-self: center;
+  margin-top: 1rem;
+  -webkit-animation: slit-in-vertical 0.45s ease-out both;
+  animation: slit-in-vertical 0.45s ease-out both;
+  animation-delay: 0.6s;
+}
 
 @-webkit-keyframes slit-in-vertical {
   0% {
     -webkit-transform: translateZ(-800px) rotateY(90deg);
     transform: translateZ(-800px) rotateY(90deg);
-    opacity: 0; }
+    opacity: 0;
+  }
+
   54% {
     -webkit-transform: translateZ(-160px) rotateY(87deg);
     transform: translateZ(-160px) rotateY(87deg);
-    opacity: 1; }
+    opacity: 1;
+  }
+
   100% {
     -webkit-transform: translateZ(0) rotateY(0);
-    transform: translateZ(0) rotateY(0); } }
+    transform: translateZ(0) rotateY(0);
+  }
+}
 
 @keyframes slit-in-vertical {
   0% {
     -webkit-transform: translateZ(-800px) rotateY(90deg);
     transform: translateZ(-800px) rotateY(90deg);
-    opacity: 0; }
+    opacity: 0;
+  }
+
   54% {
     -webkit-transform: translateZ(-160px) rotateY(87deg);
     transform: translateZ(-160px) rotateY(87deg);
-    opacity: 1; }
+    opacity: 1;
+  }
+
   100% {
     -webkit-transform: translateZ(0) rotateY(0);
-    transform: translateZ(0) rotateY(0); } }
-    main .presentacionSection .presentacion {
-      padding: 1.2rem;
-      align-self: center;
-      text-align: justify;
-      border-style: solid;
-      border-color: white;
-      border-width: 5px;
-      border-radius: 1rem;
-      font-size: 1.2rem;
-      background-color: #10c4c4;
-      display: inline-block;
-      width: 600px;
-      -webkit-animation: flip-in-hor-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-      animation: flip-in-hor-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-      animation-delay: 0.8s; }
-      main .presentacionSection .presentacion::first-letter {
-        font-size: 2rem; }
-  main .servicios {
-    display: grid;
-    flex-wrap: wrap;
-    grid-template-columns: 1fr 1fr; }
-    main .servicios .serviciosInlineDiv {
-      padding: 1.2rem;
-      align-self: stretch;
-      text-align: justify;
-      border-style: solid;
-      border-color: white;
-      border-width: 5px;
-      border-radius: 1rem;
-      font-size: 1.2rem;
-      margin: 1rem;
-      background-color: #10c4c4;
-      transition: 500ms; }
-      main .servicios .serviciosInlineDiv:hover {
-        transform: scale(1.03);
-        background-color: #13dbdb; }
-      main .servicios .serviciosInlineDiv .serviciosInline {
-        padding: 1rem; }
-      main .servicios .serviciosInlineDiv .serviciosInline2::first-letter {
-        font-size: 2rem; }
-  main .acordeon {
-    display: none;
-    position: absolute;
-    padding: 3rem; }
-    main .acordeon div h2 .acordeon_negrita {
-      font-weight: bold; }
-  main div .galeria {
-    display: flex;
-    padding: 1rem;
-    justify-content: space-evenly; }
-  main .formulario {
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr; }
-    main .formulario .botonWhatsapp {
-      background-color: #1d921d;
-      color: white;
-      z-index: 2;
-      position: fixed;
-      right: 50px;
-      bottom: 50px;
-      text-align: center;
-      border-width: 0.1rem;
-      border-style: solid;
-      border-radius: 2rem;
-      animation-name: latido;
-      animation-duration: 1s;
-      animation-iteration-count: infinite; }
+    transform: translateZ(0) rotateY(0);
+  }
+}
+
+main .presentacionSection .presentacion {
+  padding: 1.2rem;
+  align-self: center;
+  text-align: justify;
+  border-style: solid;
+  border-color: white;
+  border-width: 5px;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  background-color: #10c4c4;
+  display: inline-block;
+  width: 600px;
+  -webkit-animation: flip-in-hor-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: flip-in-hor-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 0.8s;
+}
+
+main .presentacionSection .presentacion::first-letter {
+  font-size: 2rem;
+}
+
+main .servicios {
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: 1fr 1fr;
+}
+
+main .servicios .serviciosInlineDiv {
+  padding: 1.2rem;
+  align-self: stretch;
+  text-align: justify;
+  border-style: solid;
+  border-color: white;
+  border-width: 5px;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  margin: 1rem;
+  background-color: #10c4c4;
+  transition: 500ms;
+}
+
+main .servicios .serviciosInlineDiv:hover {
+  transform: scale(1.03);
+  background-color: #13dbdb;
+}
+
+main .servicios .serviciosInlineDiv .serviciosInline {
+  padding: 1rem;
+}
+
+main .servicios .serviciosInlineDiv .serviciosInline2::first-letter {
+  font-size: 2rem;
+}
+
+main .acordeon {
+  display: none;
+  position: absolute;
+  padding: 3rem;
+}
+
+main .acordeon div h2 .acordeon_negrita {
+  font-weight: bold;
+}
+
+main div .galeria {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-evenly;
+}
+
+main .formulario {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+main .formulario .botonWhatsapp {
+  background-color: #1d921d;
+  color: white;
+  z-index: 2;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  text-align: center;
+  border-width: 0.1rem;
+  border-style: solid;
+  border-radius: 2rem;
+  animation-name: latido;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
 
 @keyframes latido {
   0% {
-    transform: scale(1.2); }
+    transform: scale(1.2);
+  }
+
   100% {
-    transform: scale(1); } }
-    main .formulario .mapa {
-      grid-column: 1 / 3;
-      grid-row: 2 / 3;
-      width: 50%; }
-      main .formulario .mapa .iframeMapa {
-        width: 100%; }
-    main .formulario .div__datosContacto {
-      grid-column: 1 / 2;
-      grid-row: 1 / 2;
-      font-size: 1.2rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-      border-style: solid;
-      border-color: white;
-      border-radius: 1rem;
-      background-color: #10c4c4;
-      padding: 1rem;
-      -webkit-animation: flip-in-hor-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-      animation: flip-in-hor-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-      animation-delay: 0.6s; }
-      main .formulario .div__datosContacto .h3__datosContacto {
-        font-size: 1.5rem; }
-    main .formulario .form {
-      grid-column: 2 / 3;
-      grid-row: 1 / 2;
-      width: 400px;
-      display: grid;
-      gap: 0.5rem;
-      -webkit-animation: slit-in-vertical 0.45s ease-out both;
-      animation: slit-in-vertical 0.45s ease-out both;
-      animation-delay: 0.8s; }
-      main .formulario .form .nombre {
-        padding: 5px;
-        border-radius: 5px;
-        border-color: white; }
-      main .formulario .form .email {
-        padding: 5px;
-        border-radius: 5px;
-        border-color: white; }
-      main .formulario .form .motivoDeConsulta {
-        padding: 5px;
-        border-radius: 5px;
-        border-color: white; }
-      main .formulario .form .consulta {
-        background-color: white;
-        padding: 5px;
-        border-radius: 5px;
-        border-color: white; }
-      main .formulario .form .textarea {
-        border-radius: 5px;
-        border-color: white; }
-      main .formulario .form .enviar {
-        width: 50px;
-        padding: 5px;
-        background-color: #062929;
-        color: white;
-        border: none; }
+    transform: scale(1);
+  }
+}
+
+main .formulario .mapa {
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+  width: 50%;
+}
+
+main .formulario .mapa .iframeMapa {
+  width: 100%;
+}
+
+main .formulario .div__datosContacto {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-style: solid;
+  border-color: white;
+  border-radius: 1rem;
+  background-color: #10c4c4;
+  padding: 1rem;
+  -webkit-animation: flip-in-hor-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: flip-in-hor-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 0.6s;
+}
+
+main .formulario .div__datosContacto .h3__datosContacto {
+  font-size: 1.5rem;
+}
+
+main .formulario .form {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  width: 400px;
+  display: grid;
+  gap: 0.5rem;
+  -webkit-animation: slit-in-vertical 0.45s ease-out both;
+  animation: slit-in-vertical 0.45s ease-out both;
+  animation-delay: 0.8s;
+}
+
+main .formulario .form .nombre {
+  padding: 5px;
+  border-radius: 5px;
+  border-color: white;
+}
+
+main .formulario .form .email {
+  padding: 5px;
+  border-radius: 5px;
+  border-color: white;
+}
+
+main .formulario .form .motivoDeConsulta {
+  padding: 5px;
+  border-radius: 5px;
+  border-color: white;
+}
+
+main .formulario .form .consulta {
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+  border-color: white;
+}
+
+main .formulario .form .textarea {
+  border-radius: 5px;
+  border-color: white;
+}
+
+main .formulario .form .enviar {
+  width: 50px;
+  padding: 5px;
+  background-color: #062929;
+  color: white;
+  border: none;
+}
 
 footer {
-  background-color: #7a537a; }
-  footer div div .ulPieDePagina {
-    list-style: none; }
-    footer div div .ulPieDePagina .linksPieDePagina {
-      font-family: 'Ubuntu', sans-serif;
-      color: white; }
-      footer div div .ulPieDePagina .linksPieDePagina:hover {
-        text-decoration: underline; }
-  footer div div .div__pieDePagina {
-    align-items: center; }
-    footer div div .div__pieDePagina .iconosPieDePagina {
-      font-size: 1.5rem;
-      text-decoration: none;
-      padding-top: 2rem; }
+  background-color: #7a537a;
+}
+
+footer div div .ulPieDePagina {
+  list-style: none;
+}
+
+footer div div .ulPieDePagina .linksPieDePagina {
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
+}
+
+footer div div .ulPieDePagina .linksPieDePagina:hover {
+  text-decoration: underline;
+}
+
+footer div div .div__pieDePagina {
+  align-items: center;
+}
+
+footer div div .div__pieDePagina .iconosPieDePagina {
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding-top: 2rem;
+}
 
 .bi-whatsapp {
-  color: #09b609; }
+  color: #09b609;
+}
 
 .bi-facebook {
-  color: blue; }
+  color: blue;
+}
 
 .bi-instagram {
-  color: #ff3c00; }
+  color: #ff3c00;
+}
 
 .bi-tiktok {
-  color: white; }
+  color: white;
+}
 
 @media (max-width: 992px) {
   .logo {
-    width: 2rem; }
+    width: 2rem;
+  }
+
   .tituloEndoTavo2 {
     font-size: 2rem;
-    text-align: right; }
+    text-align: right;
+  }
+
   .li__submenu:hover .ul__submenu {
-    display: none; }
+    display: none;
+  }
+
   main .paginaDeInicio {
-    grid-template-areas: "link" "foto"  "parrafo";
+    grid-template-areas: "link"
+      "foto"
+      "parrafo";
     justify-content: center;
-    gap: 1rem; }
-    main .paginaDeInicio .turnos {
-      font-size: 1rem;
-      justify-self: center; }
-    main .paginaDeInicio .cuandoConsultar {
-      font-size: 1rem;
-      justify-self: center; }
-    main .paginaDeInicio .foto {
-      height: 50vh;
-      justify-self: center; }
+    gap: 1rem;
+  }
+
+  main .paginaDeInicio .turnos {
+    font-size: 1rem;
+    justify-self: center;
+  }
+
+  main .paginaDeInicio .cuandoConsultar {
+    font-size: 1rem;
+    justify-self: center;
+  }
+
+  main .paginaDeInicio .foto {
+    height: 50vh;
+    justify-self: center;
+  }
+
   main h2 {
-    font-size: 1.3rem; }
+    font-size: 1.3rem;
+  }
+
   main .presentacionSection {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    gap: 1rem; }
-    main .presentacionSection .presentacion {
-      font-size: 1.1rem;
-      justify-self: center; }
-    main .presentacionSection .foto-quien-soy {
-      justify-self: center;
-      width: 300px; }
+    gap: 1rem;
+  }
+
+  main .presentacionSection .presentacion {
+    font-size: 1.1rem;
+    justify-self: center;
+  }
+
+  main .presentacionSection .foto-quien-soy {
+    justify-self: center;
+    width: 300px;
+  }
+
   main .servicios {
-    display: block; }
-    main .servicios .serviciosInlineDiv {
-      font-size: 1rem; }
-      main .servicios .serviciosInlineDiv .serviciosInline {
-        font-size: 1.1rem; }
+    display: block;
+  }
+
+  main .servicios .serviciosInlineDiv {
+    font-size: 1rem;
+  }
+
+  main .servicios .serviciosInlineDiv .serviciosInline {
+    font-size: 1.1rem;
+  }
+
   main div .galeria {
     display: grid;
-    grid-template-columns: 1fr 1fr; }
+    grid-template-columns: 1fr 1fr;
+  }
+
   main .formulario {
-    grid-template-areas: "datos formulario" "mapa mapa"; }
-    main .formulario .form {
-      grid-area: formulario; }
-    main .formulario .div__datosContacto {
-      grid-area: datos; }
-      main .formulario .div__datosContacto .h3__datosContacto {
-        font-size: 1rem; }
-    main .formulario .mapa {
-      grid-area: mapa; } }
+    grid-template-areas: "datos formulario"
+      "mapa mapa";
+  }
+
+  main .formulario .form {
+    grid-area: formulario;
+  }
+
+  main .formulario .div__datosContacto {
+    grid-area: datos;
+  }
+
+  main .formulario .div__datosContacto .h3__datosContacto {
+    font-size: 1rem;
+  }
+
+  main .formulario .mapa {
+    grid-area: mapa;
+  }
+}
 
 @media (max-width: 576px) {
   .logo {
-    width: 2rem; }
+    width: 2rem;
+  }
+
   .tituloEndoTavo2 {
     font-size: 1rem;
-    text-align: right; }
+    text-align: right;
+  }
+
   main .paginaDeInicio {
-    grid-template-areas: "link" "foto" "parrafo";
-    justify-content: center; }
-    main .paginaDeInicio .turnos {
-      font-size: 1rem;
-      justify-self: center; }
-    main .paginaDeInicio .cuandoConsultar {
-      font-size: 1rem;
-      justify-self: center; }
-    main .paginaDeInicio .foto {
-      height: 100%;
-      justify-self: center;
-      width: 100%; }
+    grid-template-areas: "link"
+      "foto"
+      "parrafo";
+    justify-content: center;
+  }
+
+  main .paginaDeInicio .turnos {
+    font-size: 1rem;
+    justify-self: center;
+  }
+
+  main .paginaDeInicio .cuandoConsultar {
+    font-size: 1rem;
+    justify-self: center;
+  }
+
+  main .paginaDeInicio .foto {
+    height: 100%;
+    justify-self: center;
+    width: 100%;
+  }
+
   main h2 {
-    font-size: 1.1rem; }
+    font-size: 1.1rem;
+  }
+
   main .presentacionSection {
-    flex-direction: column; }
-    main .presentacionSection .presentacion {
-      font-size: 1rem;
-      justify-self: center;
-      width: 100%; }
-    main .presentacionSection .foto-quien-soy {
-      justify-self: center;
-      width: 200px; }
+    flex-direction: column;
+  }
+
+  main .presentacionSection .presentacion {
+    font-size: 1rem;
+    justify-self: center;
+    width: 100%;
+  }
+
+  main .presentacionSection .foto-quien-soy {
+    justify-self: center;
+    width: 200px;
+  }
+
   main .servicios {
-    display: none; }
+    display: none;
+  }
+
   main .acordeon {
     display: inline-block;
     width: 100%;
-    position: relative; }
-    main .acordeon div div .accordion-body {
-      background-color: #10c4c4; }
+    position: relative;
+  }
+
+  main .acordeon div div .accordion-body {
+    background-color: #10c4c4;
+  }
+
   main div .galeria {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem; }
+    gap: 1rem;
+  }
+
+  main div .galeria .video {
+    width: 100%;
+  }
+
   main .formulario {
-    grid-template-areas: "datos" "formulario" "mapa"; }
-    main .formulario .form {
-      grid-area: formulario;
-      width: 100%; }
-    main .formulario .div__datosContacto {
-      grid-area: datos;
-      justify-self: center; }
-    main .formulario .mapa {
-      grid-area: mapa;
-      width: 100%;
-      align-self: center; }
-      main .formulario .mapa .iframeMapa {
-        width: 100%;
-        height: 200px;
-        align-self: center; } }
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  main .formulario .form {
+    grid-area: formulario;
+    width: 100%;
+  }
+
+  main .formulario .mapa {
+    width: 100%;
+    align-self: center;
+  }
+
+  main .formulario .mapa .iframeMapa {
+    width: 100%;
+    height: 200px;
+    align-self: center;
+  }
+}
